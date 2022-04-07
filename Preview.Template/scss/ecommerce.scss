@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
 
 $main-font-color: black;
+$divider-height: 3px;
 $color-grey: rgba(241, 240, 240, 0.849);
 
 body{
@@ -17,8 +18,8 @@ body{
      nav{
          display: flex;
          flex-direction: row;
-         padding: 15px;
-         border-bottom: $color-grey solid 3px;
+         padding: 10px;
+         border-bottom: $color-grey solid $divider-height;
          align-items: center;
          .logo{
              flex-grow: 1;
@@ -50,10 +51,18 @@ body{
          }
          .search{
              flex-grow: 4;
+             position: relative;
              input{
                  width: 100%;
                  border: none;
                  outline: none;
+             }
+             &::after{
+                content: ' ';
+                position: absolute;
+                width: 100%;
+                border-bottom: black $divider-height solid;
+                bottom: -40px;
              }
          }
          // styl dla ikonek konta i koszyka
