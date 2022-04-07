@@ -2,7 +2,8 @@
 
 $main-font-color: black;
 $divider-height: 3px;
-$color-grey: rgba(241, 240, 240, 0.849);
+$color-grey: #e9ecef;
+$color-grey-dark: #adb5bd;
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -86,6 +87,10 @@ body{
                     img{
                         width: 32px;
                         height: 32px;
+                    }
+                    transition: 1.2s background;
+                    &:hover{
+                        background: $color-grey-dark;
                     }
                 }
              }
