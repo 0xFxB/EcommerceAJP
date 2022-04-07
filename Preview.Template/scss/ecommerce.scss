@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+$main-font-color: black;
+$color-grey: rgba(241, 240, 240, 0.849);
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: $main-font-color;
+    a{
+        color: $main-font-color;
+    }
+}
+
+ .main-box{
+     display: flex;
+     flex-direction: column;
+     nav{
+         display: flex;
+         flex-direction: row;
+         padding: 15px;
+         border-bottom: $color-grey solid 3px;
+         align-items: center;
+         .logo{
+             flex-grow: 1;
+         }
+         // styl dla właściwego navbar
+         .menu {
+            display: flex;
+            flex-grow: 4;
+            ul,li{
+                display: flex;
+                flex-grow: 10;
+            }
+            li{
+                align-items: center;
+                a{
+                    padding: 10px;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    &:hover{
+                        text-decoration: underline;
+                        background: none;
+                    }
+                }
+                .active{
+                    background: $color-grey;
+                    border-radius: 5px;
+                }
+            }
+         }
+         .search{
+             flex-grow: 4;
+             input{
+                 width: 100%;
+                 border: none;
+                 outline: none;
+             }
+         }
+         // styl dla ikonek konta i koszyka
+         .details{
+             flex-grow: 1;
+             display: flex;
+
+             .detail-box{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-left: 20px;
+                font-weight: 700;
+                &:nth-child(even){
+                    background-color: $color-grey;
+                    border-radius: 10px;
+                    margin-right: 40px;
+                    width: 62px;
+                    height: 62px;
+                    img{
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+             }
+         }
+     }
+ }
