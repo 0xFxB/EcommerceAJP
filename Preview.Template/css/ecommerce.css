@@ -8,6 +8,25 @@ body a {
   color: #313131;
 }
 
+body select {
+  height: 50px;
+  border-radius: 5px;
+  border: 2px solid black;
+  color: #adb5bd;
+  padding: 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+body select option {
+  color: #313131;
+}
+
+body select option:nth-child(1) {
+  color: #adb5bd;
+}
+
 .main-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -276,6 +295,67 @@ body a {
   height: 650px;
 }
 
+.main-box .content-box .content .photos .preview .availabilite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 15px 0 0;
+  margin-bottom: 150px;
+}
+
+.main-box .content-box .content .photos .preview .availabilite span {
+  margin-bottom: 10px;
+}
+
+.main-box .content-box .content .photos .preview .availabilite .option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-box .content-box .content .photos .preview .availabilite .option select {
+  width: 45%;
+}
+
+.main-box .content-box .content .photos .preview .availabilite .option input {
+  width: 45%;
+  height: 25px;
+  border-radius: 5px;
+  border: 2px solid black;
+  color: #adb5bd;
+  padding: 10px;
+}
+
+.main-box .content-box .content .photos .preview .availabilite button {
+  border: none;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  background: black;
+  color: white;
+}
+
 .main-box .content-box .content .photos .preview-right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -375,25 +455,6 @@ body a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.main-box .content-box .content .description .size select {
-  height: 50px;
-  border-radius: 5px;
-  border: 2px solid black;
-  color: #adb5bd;
-  padding: 10px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-
-.main-box .content-box .content .description .size select option {
-  color: #313131;
-}
-
-.main-box .content-box .content .description .size select option:nth-child(1) {
-  color: #adb5bd;
 }
 
 .main-box .content-box .content .description .size button {

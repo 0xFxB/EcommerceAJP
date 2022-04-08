@@ -15,6 +15,20 @@ body{
     a{
         color: $main-font-color;
     }
+    select{
+        height: 50px;
+        border-radius: 5px;
+        border: 2px solid black;
+        color: $color-grey-dark;
+        padding: 10px;
+        appearance: none;
+        option{
+            &:nth-child(1){
+                color: $color-grey-dark;
+            }
+            color: $main-font-color;
+        }
+    }
 }
 
  .main-box{
@@ -197,6 +211,43 @@ body{
                         width: 450px;
                         height: 650px;
                     }
+                    .availabilite{
+                        display: flex;
+                        flex-direction: column;
+                        padding: 15px 15px 0 0;
+                        margin-bottom: 150px;
+                        span{
+                            margin-bottom: 10px;
+                        }
+                        .option{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            select{
+                                width: 45%;
+                            }
+                            input{
+                                width: 45%;
+                                height: 25px;
+                                border-radius: 5px;
+                                border: 2px solid black;
+                                color: $color-grey-dark;
+                                padding: 10px;
+                            }
+                        }
+                        button{
+                            border: none;
+                            text-align: center;
+                            padding: 15px;
+                            margin-top: 20px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 5px;
+                            background: black;
+                            color: white;
+                        }
+                    }
                 }
 
                 .preview-right{
@@ -271,22 +322,6 @@ body{
                 .size{
                     display: flex;
                     flex-direction: column;
-                    select{
-                        height: 50px;
-                        border-radius: 5px;
-                        border: 2px solid black;
-                        color: $color-grey-dark;
-                        padding: 10px;
-                        appearance: none;
-                        
-                        option{
-                            &:nth-child(1){
-                                color: $color-grey-dark;
-                            }
-                            color: $main-font-color;
-                        }
-                    }
-
                     button{
                         border: none;
                         text-align: center;
