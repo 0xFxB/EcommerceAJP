@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
 body {
   font-family: 'Poppins', sans-serif;
-  color: black;
+  color: #313131;
 }
 
 body a {
-  color: black;
+  color: #313131;
 }
 
 .main-box {
@@ -265,6 +265,156 @@ body a {
   color: white;
 }
 
+.main-box .content-box .content .photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-box .content-box .content .photos .preview img {
+  width: 450px;
+  height: 650px;
+}
+
+.main-box .content-box .content .photos .preview-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.main-box .content-box .content .photos .preview-right .active::after {
+  content: '';
+  border: 3px solid black;
+  position: absolute;
+  left: 5px;
+}
+
+.main-box .content-box .content .photos .preview-right img {
+  width: 80px;
+  height: 100px;
+  padding: 0 25px 25px 25px;
+}
+
+.main-box .content-box .content .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-box .content-box .content .description .title {
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding: 10px;
+}
+
+.main-box .content-box .content .description .price {
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.main-box .content-box .content .description .coolors {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-box .content-box .content .description .coolors .palette {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-box .content-box .content .description .coolors .palette a {
+  padding: 7px 7px 0 0;
+}
+
+.main-box .content-box .content .description .coolors .palette .color {
+  margin-left: 5px;
+  width: 32px;
+  height: 32px;
+  background: #e9ecef;
+  border-radius: 7px;
+}
+
+.main-box .content-box .content .description .coolors .palette .color:nth-child(1) {
+  margin: 0;
+}
+
+.main-box .content-box .content .description .coolors .palette .black {
+  background: #313131;
+}
+
+.main-box .content-box .content .description .coolors .palette .beige {
+  background: #E8D3B9;
+}
+
+.main-box .content-box .content .description .coolors .palette .pink {
+  background: #FFB6C1;
+}
+
+.main-box .content-box .content .description .size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-box .content-box .content .description .size select {
+  height: 50px;
+  border-radius: 5px;
+  border: 2px solid black;
+  color: #adb5bd;
+  padding: 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.main-box .content-box .content .description .size select option {
+  color: #313131;
+}
+
+.main-box .content-box .content .description .size select option:nth-child(1) {
+  color: #adb5bd;
+}
+
+.main-box .content-box .content .description .size button {
+  border: none;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  background: black;
+  color: white;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -435,5 +585,59 @@ footer .newsletter form input {
   outline: none;
   padding: 5px;
   padding-left: 30px;
+}
+
+.socials-banner {
+  position: fixed;
+  right: 0;
+  top: 175px;
+  background: #e9ecef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+  border-radius: 7px;
+}
+
+.socials-banner img {
+  -webkit-filter: brightness(0%);
+          filter: brightness(0%);
+  padding: 15px;
+  -webkit-transition: -webkit-filter 1.2s;
+  transition: -webkit-filter 1.2s;
+  transition: filter 1.2s;
+  transition: filter 1.2s, -webkit-filter 1.2s;
+}
+
+.socials-banner img:hover {
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+}
+
+.authors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 60px;
+  color: #e9ecef;
+}
+
+.authors img {
+  padding: 15px;
+}
+
+.authors img:nth-child(2) {
+  width: 50px;
+  height: 70px;
 }
 /*# sourceMappingURL=ecommerce.css.map */
